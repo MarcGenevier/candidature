@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Exercice 8</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+
+        <fieldset>
+            <legend>formulaire de candidature à un poste de développeur PHP.</legend>
+
+            <form action="recapitulation.php" method="GET" name="authentification" >
+
+                <label>Nom :</label>
+                <br/>
+				  <input required type="text" name="Nom" placeholder= "Saisir votre nom :" />
+                  <br/>
+                  <br/>
+                  
+                  <label>Prénom :</label>
+                  <br/>
+                  <input required type="text" name="Prénom" placeholder= "Saisir votre prénom :" />
+                  <br/>
+                  <br/>
+                  
+                  <label>Civilité :</label>
+                  <br/>
+                  <input type="radio" name="civilité" placeholder= "M." value="M." /> M.
+                  <br/>
+                  <input type="radio" name="civilité" placeholder= "Mme" value="Mme" /> Mme
+                  <br/>
+                  <input type="radio" name="civilité" placeholder= "Melle" value="Melle" /> Melle
+                  <br/>
+                  
+                  <label>Date de naissance :</label>
+                  <input required type="date" name="DateNaissance"  />
+                  <br/>
+                  <br/>
+                  
+                  <label>Num tél :</label>
+                  <input required type="tel"  name="NumTel" placeholder= "Saisir numéro tél" /> ex: 06.06.06.06.06
+                  <br/>
+                  <br/>
+                  
+                  <label>Adresse email :</label>
+                  <input required type="email" name="email" placeholder= "Votre adresse EMAIL" />
+                  <br/>
+                  <br/>
+                  
+                  <label>Votre niveau de PHP :</label>
+                  <br/>
+                  <input type="radio" name="niveau" placeholder= "débutant" value="débutant" /> débutant
+                  <br/>
+                  <input type="radio" name="niveau" placeholder= "moyen" value="moyen" /> moyen
+                  <br/>
+                  <input type="radio" name="niveau" placeholder= "bon" value="bon" /> bon
+                  <br/>
+                  
+                  Framework(s) déjà pratiqués :
+                  <br/>
+                  <input type="checkbox" name="Frameworks[]" value="Symfony" /> Symfony 
+				  <input type="checkbox" name="Frameworks[]" value="CodeIgniter" /> CodeIgniter 
+				  <input type="checkbox" name="Frameworks[]" value="FuelPHP" /> FuelPHP 
+				  <input type="checkbox" name="Frameworks[]" value="CakePHP" /> CakePHP 
+				  <input type="checkbox" name="Frameworks[]" value="Laravel" /> Laravel 
+                  <br/>
+                  <br/>
+                  
+                  <label>Renseignement(s) suplémentaire :</label>
+                  <br/>
+                  <br/>
+                  <textarea name="zonetxt" rows="10" cols="50">  </textarea> 
+                <br/>
+                <br/>
+                
+                <input type="submit" value="Valider" />
+                <br/>
+                <br/>
+                
+                <input type="reset" value="Annuler" />
+            
+            
+            </form>
+
+
+        </fieldset>
+
+    </body>
+
+</html>
